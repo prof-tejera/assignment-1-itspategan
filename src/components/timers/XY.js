@@ -4,6 +4,7 @@ import DisplayTime from "../generic/DisplayTime";
 import ControlButton from "../generic/ControlButton";
 import Input from "../generic/Input";
 import SimpleText from "../generic/SimpleText";
+import DisplayRounds from "../generic/DisplayRounds";
 
 const Container = styled.div`
   height: 90%;
@@ -23,7 +24,8 @@ class Stopwatch extends React.Component {
           <ControlButton value={"start"} />
           <ControlButton value={"pause"} />
         </div>
-        <div className="block">
+        <DisplayRounds value="0"></DisplayRounds>
+        <div>
           <SimpleText value={"ROUNDS"} />
           <Input />
           <SimpleText value={"TIME"} />

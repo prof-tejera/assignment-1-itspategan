@@ -44,3 +44,5 @@ class ControlButton extends Component {
 }
 
 export default ControlButton;
+
+// valuable insight from https://react.school/ui/button .
