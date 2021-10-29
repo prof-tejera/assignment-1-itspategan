@@ -13,10 +13,13 @@ const Timers = styled.div`
 `;
 
 const Timer = styled.div`
-  border: 1px solid gray;
+  /* border: 1px solid gray;
   padding: 20px;
   margin: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const TimerTitle = styled.div``;

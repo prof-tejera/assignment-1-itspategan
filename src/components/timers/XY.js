@@ -1,9 +1,39 @@
 import React from "react";
+import styled from "styled-components";
+import DisplayTime from "../generic/DisplayTime";
+import ControlButton from "../generic/ControlButton";
+import Input from "../generic/Input";
+import SimpleText from "../generic/SimpleText";
+import DisplayRounds from "../generic/DisplayRounds";
 
-class XY extends React.Component {
+const Container = styled.div`
+  height: 90%;
+  width: 100%;
+  border: none;
+  background: #8d99ae;
+  padding: 20px;
+  text-align: center;
+`;
+
+class Stopwatch extends React.Component {
   render() {
-    return null;
+    return (
+      <Container>
+        <DisplayTime></DisplayTime>
+        <div>
+          <ControlButton value={"start"} />
+          <ControlButton value={"pause"} />
+        </div>
+        <DisplayRounds value="0"></DisplayRounds>
+        <div>
+          <SimpleText value={"ROUNDS"} />
+          <Input />
+          <SimpleText value={"TIME"} />
+          <Input />
+        </div>
+      </Container>
+    );
   }
 }
 
-export default XY;
+export default Stopwatch;
