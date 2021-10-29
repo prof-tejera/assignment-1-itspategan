@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-import ControlButton from "./ControlButton";
 
 const TextInput = styled.input`
   width: 100px;
